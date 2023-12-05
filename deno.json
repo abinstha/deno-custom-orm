@@ -1,0 +1,17 @@
+{
+  "tasks": {
+    "start": "deno run -A app.ts",
+    "lock": "deno cache --lock=deno.lock --lock-write deps.ts",
+    "fmt": "deno fmt --unstable",
+    "fmt:check": "deno fmt --unstable --check",
+    "seed": "deno run -A src/db/seed.ts"
+  },
+  "fmt": {
+    "singleQuote": true,
+    "lineWidth": 150,
+    "semiColons": true,
+    "useTabs": false,
+    "indentWidth": 2,
+    "proseWrap": "always"
+  }
+}
